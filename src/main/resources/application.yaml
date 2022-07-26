@@ -1,0 +1,21 @@
+spring:
+  jackson:
+    property-naming-strategy: SNAKE_CASE
+
+  datasource:
+    url: jdbc:postgresql://localhost:5432/student
+    username: postgres
+    password: admin
+  jpa:
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+        ddl-auto: create-drop
+    hibernate:
+      ddl-auto: create-drop
+
+
+server:
+  port: 8080
+  contextPath: /students
+
